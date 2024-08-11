@@ -1,0 +1,166 @@
+/* Base styling for the homepage */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink; /* Optional: Light background for the whole page */
+}
+
+.homepage {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    padding: 50px;
+    max-width: 3000px;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for left section */
+.left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.button-container button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for upload section */
+.upload-section {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.upload-section input[type="file"] {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-section input[type="file"]::-webkit-file-upload-button {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-section input[type="file"]:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for send button */
+.send-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.send-button:hover {
+    background-color: #218838;
+}
+
+/* Styling for right sections */
+.right-sections {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    gap: 20px; /* Space between sections */
+}
+
+.right-sections .section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for bottom section */
+.bottom-section {
+    grid-column: 1 / span 2; /* Span both columns in the grid */
+    display: flex;
+    gap: 20px;
+    justify-content: space-between; /* Space out the sections */
+}
+
+/* Styling for output image container */
+.output-image-container {
+    flex: 1; /* Allow it to grow as needed */
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.output-image {
+    background-color: #ffffff;
+    border: 2px solid;
+    border-radius: 8px;
+    height: 150px; /* Half the size of the previous version */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Placeholder image */
+.output-image::before {
+    content: "Output Image Here";
+    color: #007bff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Styling for output description */
+.output-description {
+    flex: 1; /* Allow it to grow as needed */
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.output-description h2 {
+    margin-bottom: 20px;
+}
+
+.output-description ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.output-description li {
+    margin-bottom: 10px;
+}
